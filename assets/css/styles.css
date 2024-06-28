@@ -14,7 +14,7 @@
   --bg-color: #f1edee;
   --primary-color: #1a2231;
   --secondary-color: #db5461;
-  --shadow:#48618a;
+  --shadow: #48618a;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -221,6 +221,7 @@ nav ul li {
 
 .more-about-container {
   background-color: var(--bg-color);
+  max-width: 40.75rem;
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
@@ -345,7 +346,7 @@ footer {
 .icon-card {
   background-color: var(--bg-color);
   border-radius: 8.25px;
-    box-shadow: 0 3px 10px var(--shadow);
+  box-shadow: 0 3px 10px var(--shadow);
   padding: 15px;
   margin: 7.5px;
 }
