@@ -137,23 +137,6 @@ nav ul li {
 }
 /* Hero section ends */
 
-/* More about */
-.more-about {
-  background-color: var(--bg-color);
-  padding: 1rem 6rem;
-}
-
-.more-about h2 {
-  margin-bottom: var(--bottom-margin);
-  text-align: center;
-}
-
-.more-about p {
-  line-height: var(--line-height);
-  padding: 0.4rem;
-}
-/* More about ends */
-
 /* Skills section */
 .skills {
   max-width: 68.75rem;
@@ -219,6 +202,30 @@ nav ul li {
 
 /* Projects section ends */
 
+/* More about */
+.more-about {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+}
+
+.more-about-container {
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+.more-about h2 {
+  margin-bottom: var(--bottom-margin-2);
+  text-align: center;
+}
+
+.more-about p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+/* More about ends */
+
 /* Contacts section */
 .contact {
   margin-top: 2rem;
@@ -234,7 +241,7 @@ nav ul li {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 10px var(--primary-shadow);
 }
 
 .contact-form-container label {
