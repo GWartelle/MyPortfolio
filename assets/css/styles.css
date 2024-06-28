@@ -6,11 +6,6 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  /* --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69; */
   --bg-color: #f1edee;
   --primary-color: #1a2231;
   --secondary-color: #db5461;
@@ -58,13 +53,17 @@ section {
 /* CSS Resets end */
 
 /* Background */
-body {
+.bg-image {
   background-image: url(../images/background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  backdrop-filter: blur(2px);
+}
+
+.bg-blur {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
 }
 /* Background ends */
 
