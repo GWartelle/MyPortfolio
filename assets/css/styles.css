@@ -46,6 +46,10 @@ body {
   font-family: var(--font-family);
 }
 
+h2 {
+  color: var(--primary-color);
+}
+
 section {
   /* max-width: 1100px;
   margin: auto; */
