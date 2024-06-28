@@ -154,8 +154,8 @@ nav ul li {
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 9rem;
+  height: 8.5rem;
 }
 /* Skills section ends */
 
@@ -331,10 +331,10 @@ footer {
 /* General (utilities) */
 .icon-card {
   background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
-  margin: 10px;
+  border-radius: 8.25px;
+  box-shadow: 0 2.25px 7.5px var(--secondary-shadow);
+  padding: 15px;
+  margin: 7.5px;
 }
 
 .project-card {
