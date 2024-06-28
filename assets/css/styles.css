@@ -129,6 +129,7 @@ nav ul li {
 }
 
 .bio {
+  background-color: var(--bg-color);
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
@@ -169,7 +170,6 @@ nav ul li {
 
 /* Projects section */
 .projects {
-  background-color: var(--bg-color);
   padding: 32px 0;
   margin-top: 2rem;
 }
@@ -207,16 +207,15 @@ nav ul li {
 .project-details {
   margin-bottom: var(--bottom-margin);
 }
-
 /* Projects section ends */
 
 /* More about */
 .more-about {
-  background-color: var(--bg-color);
   padding: 1rem 6rem;
 }
 
 .more-about-container {
+  background-color: var(--bg-color);
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
@@ -245,6 +244,7 @@ nav ul li {
 }
 
 .contact-form-container {
+  background-color: var(--bg-color);
   max-width: 40.75rem;
   margin: 0 auto;
   padding: 0.938rem;
@@ -338,7 +338,7 @@ footer {
 
 /* General (utilities) */
 .icon-card {
-  background-color: #fff;
+  background-color: var(--bg-color);
   border-radius: 8.25px;
   box-shadow: 0 2.25px 7.5px var(--secondary-shadow);
   padding: 15px;
@@ -346,7 +346,7 @@ footer {
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: var(--bg-color);
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
