@@ -351,6 +351,11 @@ footer {
 .socicon {
   width: 3rem;
   height: 3rem;
+  transition: var(--transition);
+}
+
+.socicon:hover {
+  filter: invert();
 }
 /* Social button ends */
 
