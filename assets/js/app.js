@@ -39,3 +39,11 @@ window.addEventListener("load", () => {
     img.classList.remove("lazy-load");
   });
 });
+
+// Clears up the contact form after submission
+window.onbeforeunload = () => {
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.reset();
+  }
+};
