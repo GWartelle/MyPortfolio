@@ -342,28 +342,29 @@ footer {
 .socials {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   position: fixed;
   right: 1%;
   bottom: 50%;
 }
 
 .socicon {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 /* Social button ends */
 
 /* Scroll to top button */
 .scroll-up {
   position: fixed;
-  right: 0.5%;
+  right: 1.5%;
   bottom: 3%;
   cursor: pointer;
 }
 
 .up-arrow {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 /* Scroll to top button ends */
 
