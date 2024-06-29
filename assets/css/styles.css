@@ -26,7 +26,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 2px solid red; */
 }
 
 ul {
@@ -124,13 +123,12 @@ nav ul li {
   justify-content: center;
   gap: 2.5rem;
   max-width: 68.75rem;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 .hero-img {
   height: 20rem;
   width: 20rem;
-  margin-top: 2rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -446,7 +444,7 @@ footer {
   .more-about-container {
     max-width: 23.75rem;
   }
-  
+
   .more-about h2 {
     text-align: center;
   }
