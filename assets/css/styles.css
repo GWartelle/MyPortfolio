@@ -130,6 +130,7 @@ nav ul li {
 .hero-img {
   height: 20rem;
   width: 20rem;
+  margin-top: 2rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -410,7 +411,6 @@ footer {
   }
 
   .hero {
-    margin-top: -4rem;
     flex-direction: column;
     gap: 0;
   }
@@ -421,7 +421,7 @@ footer {
   }
 
   .bio {
-    margin-top: -7rem;
+    margin-top: 2rem;
     width: 20.5rem;
   }
 
