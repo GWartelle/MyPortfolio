@@ -53,6 +53,11 @@ section {
   max-width: 1100px;
   margin: auto;
 }
+
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 /* CSS Resets end */
 
 /* Background */

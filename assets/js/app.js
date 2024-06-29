@@ -9,6 +9,9 @@ const scrollUp = document.querySelector("#scroll-up");
 // Select nav links
 const navLink = document.querySelectorAll(".nav-link");
 
+// Select lazy-load images
+const images = document.querySelectorAll(".lazy-load");
+
 // Hamburger menu function
 burger.addEventListener("click", () => {
   ul.classList.toggle("show");
@@ -21,11 +24,18 @@ navLink.forEach((link) =>
   })
 );
 
-// scroll to top functionality
+// Scroll to top functionality
 scrollUp.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     left: 0,
     behavior: "smooth",
+  });
+});
+
+// Lazy loading images to avoid FOUC
+window.addEventListener("load", () => {
+  images.forEach((img) => {
+    img.classList.remove("lazy-load");
   });
 });
