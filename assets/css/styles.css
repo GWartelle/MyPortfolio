@@ -132,8 +132,8 @@ nav ul li {
 }
 
 .hero-img {
-  height: 20rem;
-  width: 20rem;
+  height: 18rem;
+  width: 18rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -142,7 +142,7 @@ nav ul li {
 
 .bio {
   background-color: var(--bg-color);
-  width: 25rem;
+  width: 27.5rem;
   padding: 0.625rem;
   border-radius: 6px;
   box-shadow: 0 3px 10px var(--shadow);
@@ -431,7 +431,7 @@ footer {
 
   .bio {
     margin-top: 2rem;
-    width: 20.5rem;
+    max-width: 23.75rem;
   }
 
   .icon {
