@@ -83,7 +83,7 @@ const loadTranslations = (lang) => {
       const links = document.querySelectorAll("a, i");
       links.forEach((link) => {
         const key = link.dataset.i18n;
-        if (key) {
+        if (key === "long_loading" || key === "up_arrow") {
           link.title = data[key];
         }
       });
