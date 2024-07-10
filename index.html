@@ -5,76 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--CSS Styles -->
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- Favicons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
+      href="/assets/icons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
+      href="/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/icons/favicon-16x16.png"
     />
 
-    <title>Gabriel Wartelle | Développeur Web</title>
+    <title></title>
   </head>
 
   <body>
     <!-- Background -->
     <div class="bg-image">
-      <div class="bg-blur">
-        <!-- Navbar -->
-        <nav>
-          <h1>GABRIEL WARTELLE</h1>
-          <ul class="navigation">
-            <li><a href="#about" class="nav-link">À propos</a></li>
-            <li><a href="#skills" class="nav-link">Compétences</a></li>
-            <li><a href="#projects" class="nav-link">Projets</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-          </ul>
-          <button class="burger-menu" id="burger-menu">
-            <ion-icon class="bars" name="menu-outline"></ion-icon>
-            <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-          </button>
-        </nav>
+      <!-- Navbar -->
+      <nav>
+        <h1 data-i18n="nav_title"></h1>
+        <ul class="navigation">
+          <li>
+            <button id="language-toggle">
+              <img
+                src="assets/icons/flag-fr-svgrepo-com.svg"
+                alt="Français"
+                class="flag-icon flag-fr"
+              />
+              <img
+                src="assets/icons/flag-for-flag-united-kingdom-svgrepo-com.svg"
+                alt="English"
+                class="flag-icon flag-en"
+              />
+            </button>
+          </li>
+          <li>
+            <a href="#about" class="nav-link" data-i18n="nav_about"></a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link" data-i18n="nav_skills"></a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-i18n="nav_projects"></a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-i18n="nav_contact"></a>
+          </li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+          <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+        </button>
+      </nav>
 
-        <!-- Hero Section -->
-        <section class="hero" id="about">
-          <img
-            src="assets/images/profilePicture.jpeg"
-            alt="profile-picture"
-            loading="lazy"
-            class="hero-img lazy-load"
-          />
-          <div class="bio">
-            <h2 class="bio-title">À propos de moi</h2>
-            <p class="bio-text">
-              Je cherche à intégrer une entreprise dynamique pour un contrat de
-              professionnalisation d'un an, en parallèle de mon Bachelor.
-            </p>
-            <p class="bio-text">
-              Ma motivation et ma curiosité, alliées à mon expérience, me
-              permettront de contribuer efficacement à tous vos projets et de
-              relever chaque défi avec succès.
-            </p>
-          </div>
-        </section>
+      <!-- Hero Section -->
+      <section class="hero" id="about">
+        <img
+          src="assets/images/profilePicture.jpeg"
+          alt=""
+          loading="lazy"
+          class="hero-img lazy-load"
+          data-i18n="profile_picture"
+        />
+        <div class="bio">
+          <h2 class="bio-title" data-i18n="bio_title"></h2>
+          <p class="bio-text" data-i18n="bio_text_1"></p>
+          <p class="bio-text" data-i18n="bio_text_2"></p>
+          <p class="bio-text" data-i18n="bio_text_3"></p>
+        </div>
+      </section>
 
-        <!-- Skills section -->
-        <section class="skills" id="skills">
-          <h2 class="skill-header">Mes compétences</h2>
+      <!-- Skills section -->
+      <section class="skills" id="skills">
+        <h2 class="skills-header" data-i18n="skills_header"></h2>
 
-          <div class="skills-wrapper">
-            <div class="first-set">
+        <div class="skills-wrapper">
+          <div class="first-set">
+            <div>
               <a href="https://fr.react.dev/" title="React" target="_blank">
                 <img
                   src="assets/icons/react-svgrepo-com.svg"
-                  alt="React logo"
+                  alt="React"
                   loading="lazy"
                   class="icon icon-card lazy-load"
                 />
@@ -82,15 +105,17 @@
               <a href="https://nodejs.org/en" title="Node.js" target="_blank">
                 <img
                   src="assets/icons/node-js-svgrepo-com.svg"
-                  alt="Node.js logo"
+                  alt="Node.js"
                   loading="lazy"
                   class="icon icon-card lazy-load"
                 />
               </a>
+            </div>
+            <div>
               <a href="https://expressjs.com/" title="Express" target="_blank">
                 <img
                   src="assets/icons/express-svgrepo-com.svg"
-                  alt="Express logo"
+                  alt="Express"
                   loading="lazy"
                   class="icon icon-card lazy-load"
                 />
@@ -102,14 +127,16 @@
               >
                 <img
                   src="assets/icons/mongo-svgrepo-com.svg"
-                  alt="MongoDB logo"
+                  alt="MongoDB"
                   loading="lazy"
                   class="icon icon-card lazy-load"
                 />
               </a>
             </div>
+          </div>
 
-            <div class="second-set">
+          <div class="second-set">
+            <div>
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/HTML"
                 title="HTML5"
@@ -117,7 +144,7 @@
               >
                 <img
                   src="assets/icons/html5-svgrepo-com.svg"
-                  alt="HTML5 logo"
+                  alt="HTML5"
                   loading="lazy"
                   class="icon icon-card lazy-load"
                 />
@@ -129,11 +156,13 @@
               >
                 <img
                   src="assets/icons/css3-svgrepo-com.svg"
-                  alt="CSS3 logo"
+                  alt="CSS3"
                   loading="lazy"
                   class="icon icon-card lazy-load"
                 />
               </a>
+            </div>
+            <div>
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 title="JavaScript"
@@ -141,7 +170,7 @@
               >
                 <img
                   src="assets/icons/javascript-svgrepo-com.svg"
-                  alt="JavaScript logo"
+                  alt="JavaScript"
                   loading="lazy"
                   class="icon icon-card lazy-load"
                 />
@@ -149,219 +178,208 @@
               <a href="https://git-scm.com/" title="Git" target="_blank">
                 <img
                   src="assets/icons/git-svgrepo-com.svg"
-                  alt="Git logo"
+                  alt="Git"
                   loading="lazy"
                   class="icon icon-card lazy-load"
                 />
               </a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Projects section -->
-        <section class="projects" id="projects">
-          <h2 class="projects-title">Mes projets</h2>
-          <div class="projects-container">
-            <div class="project-container project-card">
-              <img
-                src="assets/images/chatApp.png"
-                alt="chatapp"
-                loading="lazy"
-                class="project-pic lazy-load"
-              />
-              <h3 class="project-title">ChatApp</h3>
-              <p class="project-details">
-                WebApp de discussion instantanée. Développée avec la stack MERN,
-                cette application gère le partage de donnée instantanée à l'aide
-                de Socket.io.
-              </p>
-              <a
-                href="https://chatapp-oy8v.onrender.com/"
-                target="_blank"
-                class="project-link"
-                title="! Chargement long !"
-              >
-                <button type="button" class="project-btn">Démo</button>
-              </a>
-              <a
-                href="https://github.com/GWartelle/ChatApp"
-                target="_blank"
-                class="project-link"
-              >
-                <button type="button" class="project-btn">Code</button>
-              </a>
-            </div>
-            <div class="project-container project-card">
-              <img
-                src="assets/images/socioPedia.png"
-                alt="netflic-clone"
-                loading="lazy"
-                class="project-pic lazy-load"
-              />
-              <h3 class="project-title">SocioPedia</h3>
-              <p class="project-details">
-                Réseau social développé avec la stack MERN. WebApp responsive,
-                avec gestion d'upload d'images, stockées sur un bucket AWS S3.
-              </p>
-              <a
-                href="https://sociopedia-6qm6.onrender.com"
-                target="_blank"
-                class="project-link"
-                title="! Chargement long !"
-              >
-                <button type="button" class="project-btn">Démo</button>
-              </a>
-              <a
-                href="https://github.com/GWartelle/SocioPedia"
-                target="_blank"
-                class="project-link"
-              >
-                <button type="button" class="project-btn">Code</button>
-              </a>
-            </div>
-            <div class="project-container project-card">
-              <img
-                src="assets/images/divvyBikes.png"
-                alt="greeny-earth"
-                loading="lazy"
-                class="project-pic lazy-load"
-              />
-              <h3 class="project-title">Divvy Bikes Data Analysis</h3>
-              <p class="project-details">
-                Data Analyse réalisée sur une base de donnée d'une société de
-                location de vélo. Réalisée dans le but de convertir plus
-                d'utilisateur en abonnés.
-              </p>
-              <a
-                href="https://rpubs.com/G_Wartelle/divvy-bikes-case-study"
-                target="_blank"
-                class="project-link"
-              >
-                <button type="button" class="project-btn">Démo</button>
-              </a>
-              <a
-                href="https://github.com/GWartelle/DivvyBikesCaseStudy"
-                target="_blank"
-                class="project-link"
-              >
-                <button type="button" class="project-btn">Code</button>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <!-- More about -->
-        <section class="more-about">
-          <h2>Plus sur moi</h2>
-          <div class="more-about-container">
-            <p>
-              Si vous avez parcouru mon CV, une chose est évidente : j’ai un
-              profil atypique. J’ai un parcours professionnel varié, marqué par
-              la persévérance : une fois que je m’engage dans une voie, je vais
-              jusqu’au bout. Bien que j’ai rencontré des difficultés à trouver
-              ma vocation, je ne suis jamais résolu à rester dans un milieu
-              professionnel qui ne me convenait pas.
-            </p>
-            <p>
-              Ce parcours m’a finalement conduit vers le domaine qui me
-              correspond : l’informatique. J’ai choisi de me former en
-              autonomie, profitant des nombreuses ressources de qualité
-              disponibles en ligne. Ce choix m’a permis de me concentrer sur les
-              domaines qui m’intéressaient et m’a conduit à mon métier d'avenir
-              : le développement web.
-            </p>
-            <p>
-              C’est pourquoi je suis aujourd'hui inscrit au Bachelor
-              Développement Web de MyDigitalSchool. C'est un organisme de
-              formation expérimenté, reconnu et implanté partout en France. Le
-              panel de formations de qualité qu'ils proposent est
-              impressionnant, et leur approche multidisciplinaire, axée sur des
-              projets réels, correspond à ma vision de l’enseignement.
-            </p>
-            <p>
-              C'est justement pour accompagner ce cursus que je suis à la
-              recherche d'un poste en alternance.Je suis impatient de travailler
-              en équipe, de partager mes compétences et d'apprendre des autres.
-              Je suis persuadé que cette interaction est essentielle pour
-              progresser et s'épanouir dans le monde professionnel. Avec mon
-              expérience et le soutien de ma formation, je serai un atout
-              indéniable pour votre équipe.
-            </p>
-            <p>
-              Je serai ravi de pouvoir échanger avec vous au sujet de mon
-              profil. Et c'est dans ce but que je vous invite à prendre contact
-              avec moi, soit par le biais du formulaire ci-dessous, soit via mon
-              profil LinkedIn en cliquant sur l'icône à votre droite.
-            </p>
-          </div>
-        </section>
-
-        <!-- Contact section -->
-        <section class="contact" id="contact">
-          <h2>Prendre contact</h2>
-          <div class="contact-form-container">
-            <div class="contact-form">
-              <form
-                id="contact-form"
-                action="https://formspree.io/f/mvgpopnz"
-                method="POST"
-              >
-                <div class="form-control">
-                  <label for="name">Nom</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="sender-name"
-                    placeholder="Entrez votre nom"
-                    class="input-field"
-                    required
-                  />
-                </div>
-                <div class="form-control">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="sender-email"
-                    placeholder="Entrez votre email"
-                    class="input-field"
-                    required
-                  />
-                </div>
-                <div class="form-control">
-                  <label for="message">Message</label>
-                  <textarea
-                    id="message"
-                    cols="60"
-                    rows="10"
-                    placeholder="Entrez votre message"
-                    name="message"
-                    class="input-field"
-                    required
-                  ></textarea>
-                </div>
-                <input
-                  type="submit"
-                  value="Submit"
-                  id="submit-btn"
-                  class="submit-btn"
-                />
-              </form>
-            </div>
-          </div>
-        </section>
-
-        <!-- Footer section -->
-        <footer>
-          <p class="copy">&copy; Copyright 2021</p>
-          <p class="copy">
-            Built with &#x2661; by
-            <a href="https://twitter.com/Ksound22" target="_blank">
-              Kolade Chris (Ksound)
+      <!-- Projects section -->
+      <section class="projects" id="projects">
+        <h2 class="projects-title" data-i18n="projects_title"></h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="assets/images/chatApp.png"
+              alt=""
+              loading="lazy"
+              class="project-pic lazy-load"
+              data-i18n="project_1_img"
+            />
+            <h3 class="project-title" data-i18n="project_1_title"></h3>
+            <p class="project-details" data-i18n="project_1_text"></p>
+            <a
+              href="https://chatapp-oy8v.onrender.com/"
+              target="_blank"
+              class="project-link"
+              title=""
+              data-i18n="long_loading"
+            >
+              <button
+                type="button"
+                class="project-btn"
+                data-i18n="project_demo"
+              ></button>
             </a>
-          </p>
-        </footer>
-      </div>
+            <a
+              href="https://github.com/GWartelle/ChatApp"
+              target="_blank"
+              class="project-link"
+            >
+              <button
+                type="button"
+                class="project-btn"
+                data-i18n="project_code"
+              ></button>
+            </a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/socioPedia.png"
+              alt=""
+              loading="lazy"
+              class="project-pic lazy-load"
+              data-i18n="project_2_img"
+            />
+            <h3 class="project-title" data-i18n="project_2_title"></h3>
+            <p class="project-details" data-i18n="project_2_text"></p>
+            <a
+              href="https://sociopedia-6qm6.onrender.com"
+              target="_blank"
+              class="project-link"
+              title=""
+              data-i18n="long_loading"
+            >
+              <button
+                type="button"
+                class="project-btn"
+                data-i18n="project_demo"
+              ></button>
+            </a>
+            <a
+              href="https://github.com/GWartelle/SocioPedia"
+              target="_blank"
+              class="project-link"
+            >
+              <button
+                type="button"
+                class="project-btn"
+                data-i18n="project_code"
+              ></button>
+            </a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/divvyBikes.png"
+              alt=""
+              loading="lazy"
+              class="project-pic lazy-load"
+              data-i18n="project_3_img"
+            />
+            <h3 class="project-title" data-i18n="project_3_title"></h3>
+            <p class="project-details" data-i18n="project_3_text"></p>
+            <a
+              href="https://rpubs.com/G_Wartelle/divvy-bikes-case-study"
+              target="_blank"
+              class="project-link"
+            >
+              <button
+                type="button"
+                class="project-btn"
+                data-i18n="project_demo"
+              ></button>
+            </a>
+            <a
+              href="https://github.com/GWartelle/DivvyBikesCaseStudy"
+              target="_blank"
+              class="project-link"
+            >
+              <button
+                type="button"
+                class="project-btn"
+                data-i18n="project_code"
+              ></button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- More about -->
+      <section class="more-about">
+        <h2 data-i18n="more_about_title"></h2>
+        <div class="more-about-container">
+          <p data-i18n="more_about_text_1"></p>
+          <p data-i18n="more_about_text_2"></p>
+          <p data-i18n="more_about_text_3"></p>
+          <p data-i18n="more_about_text_4"></p>
+          <p data-i18n="more_about_text_5"></p>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section class="contact" id="contact">
+        <h2 data-i18n="contact_title"></h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/mvgpopnz"
+              method="POST"
+            >
+              <div class="form-control">
+                <label for="name" data-i18n="contact_label_1"></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder=""
+                  class="input-field"
+                  required
+                  data-i18n="contact_placeholder_1"
+                />
+              </div>
+              <div class="form-control">
+                <label for="email" data-i18n="contact_label_2"></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder=""
+                  class="input-field"
+                  required
+                  data-i18n="contact_placeholder_2"
+                />
+              </div>
+              <div class="form-control">
+                <label for="message" data-i18n="contact_label_3"></label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder=""
+                  name="message"
+                  class="input-field"
+                  required
+                  data-i18n="contact_placeholder_3"
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value=""
+                id="submit-btn"
+                class="submit-btn"
+                data-i18n="contact_submit"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer>
+        <p>
+          <span data-i18n="footer_text"></span>
+          <a
+            href="https://github.com/Ksound22/developer-portfolio"
+            target="_blank"
+            data-i18n="footer_link"
+          ></a>
+        </p>
+      </footer>
     </div>
 
     <!-- Social accounts - Fixed to the right -->
@@ -372,25 +390,26 @@
         title="Linkedin"
         ><img
           src="assets/icons/linkedin-1-svgrepo-com.svg"
-          alt="Linkedin icon"
+          alt="Linkedin"
           loading="lazy"
           class="socicon"
       /></a>
       <a href="https://github.com/GWartelle" target="_blank" title="Github"
         ><img
           src="assets/icons/github-142-svgrepo-com.svg"
-          alt="Github icon"
+          alt="Github"
           loading="lazy"
           class="socicon"
       /></a>
     </div>
 
     <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up" title="Back to top">
+    <i class="scroll-up" id="scroll-up" title="" data-i18n="up_arrow">
       <img
         src="assets/icons/arrow-up-circle-svgrepo-com.svg"
         class="socicon up-arrow"
-        alt="Up arrow icon"
+        alt=""
+        data-i18n="up_arrow_icon"
       />
     </i>
 

@@ -68,11 +68,6 @@ section {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-.bg-blur {
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(10px);
-}
 /* Background ends */
 
 /* Navbar */
@@ -95,8 +90,10 @@ nav h1 {
 
 nav a {
   color: var(--primary-color);
+  border-bottom: 2px solid var(--bg-color);
   transition: var(--transition);
 }
+
 nav a:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
@@ -108,7 +105,30 @@ nav ul {
 }
 
 nav ul li {
+  display: flex;
+  align-items: center;
   font-weight: var(--bold-font);
+}
+
+#language-toggle {
+  border: 2px solid var(--bg-color);
+  border-radius: 4px;
+  padding: 3px 6px 0;
+  transition: var(--transition);
+}
+
+#language-toggle:hover {
+  border: 2px solid var(--secondary-color);
+  cursor: pointer;
+}
+
+.flag-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.flag-icon.flag-fr {
+  display: none;
 }
 
 .burger-menu {
@@ -166,8 +186,19 @@ nav ul li {
   margin-top: 2.5rem;
 }
 
-.skill-header {
+.skills-header {
   margin-bottom: 1rem;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-set,
+.second-set {
+  display: flex;
 }
 
 .skills-wrapper img {
@@ -336,6 +367,17 @@ footer {
   text-align: center;
   margin: 2rem 0 0;
 }
+
+footer a {
+  color: var(--primary-color);
+  font-weight: var(--bold-font);
+  border-bottom: 2px solid var(--bg-color);
+  transition: var(--transition);
+}
+
+footer a:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
 /* Footer section ends */
 
 /* Social buttons */
@@ -391,7 +433,7 @@ footer {
 }
 
 /* Media queries for responsiveness */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 750px) {
   nav {
     padding: 1.5rem 1rem;
   }
@@ -434,9 +476,9 @@ footer {
     max-width: 23.75rem;
   }
 
-  .icon {
-    width: 5.875rem;
-    height: 5.25rem;
+  .first-set,
+  .second-set {
+    flex-direction: column;
   }
 
   .projects-container {
@@ -458,10 +500,6 @@ footer {
 
   .more-about h2 {
     text-align: center;
-  }
-
-  .more-about p {
-    text-align: justify;
   }
 
   .contact-form-container {
