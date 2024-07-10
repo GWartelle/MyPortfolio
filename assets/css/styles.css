@@ -81,7 +81,7 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
@@ -164,7 +164,7 @@ nav ul li {
   background-color: var(--bg-color);
   width: 27.5rem;
   padding: 0.625rem;
-  border-radius: 6px;
+  border-radius: 5px;
   box-shadow: 0 3px 10px var(--shadow);
 }
 
@@ -440,6 +440,9 @@ footer a:hover {
   nav ul {
     position: fixed;
     background-color: var(--bg-color);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 5px 5px;
+    padding: 1.5rem;
     flex-direction: column;
     top: 86px;
     left: 10%;
@@ -451,6 +454,10 @@ footer a:hover {
 
   nav ul li {
     margin: 8px;
+  }
+
+  nav ul li:not(:has(#language-toggle)) {
+    padding-left: 7px;
   }
 
   .burger-menu {
