@@ -59,7 +59,11 @@ const loadTranslations = (lang) => {
       const dataI18n = document.querySelectorAll("[data-i18n]");
       dataI18n.forEach((element) => {
         const key = element.dataset.i18n;
-        if (key !== "long_loading" && key !== "up_arrow") {
+        if (
+          key !== "long_loading" &&
+          key !== "up_arrow" &&
+          key !== "contact_placeholder_3"
+        ) {
           element.textContent = data[key];
         }
       });
