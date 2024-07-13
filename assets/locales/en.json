@@ -17,7 +17,7 @@
   "project_1_text": "Instant messaging web app. Developed using the MERN stack, this application enables real-time data sharing using Socket.io.",
   "project_2_img": "Image of the SocioPedia project",
   "project_2_title": "SocioPedia",
-  "project_2_text": "Responsive social network web app supporting image uploads, stored in an AWS S3 bucket, using Multer.",
+  "project_2_text": "Responsive social media web app supporting image uploads, stored in an AWS S3 bucket, using Multer.",
   "project_3_img": "Image of the Divvy Bikes Data Analysis",
   "project_3_title": "Divvy Bikes Data Analysis",
   "project_3_text": "Data analysis performed on Divvy Bikes' database to convert more users of their bike rental service into subscribers.",
