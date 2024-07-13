@@ -247,6 +247,10 @@ nav ul li {
   margin-bottom: var(--bottom-margin);
 }
 
+.warning-title {
+  color: var(--secondary-color);
+}
+
 .project-details {
   margin-bottom: var(--bottom-margin);
 }
