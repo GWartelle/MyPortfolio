@@ -103,10 +103,11 @@ You only need to open `index.html` into the browser of your choice to see what t
 
 ![Portfolio Home Screenshot](./assets/images/home_screenshot.png)
 
-The first thing on this portfolio (aside from my name) is the navigation bar in the top left of the screen.
-On it, you have a flag to toggle between French and English translations, followed by a link to the different parts of the portfolio.
+At the top of the screen you'll find the header.
+On the left-hand side, we have my full name, which links to the [repository](https://github.com/GWartelle/MyPortfolio) for this portfolio.
+On the right-hand side, there's the navigation bar, with a flag for switching between the french and english translations, followed by a link to the different parts of the portfolio.
 
-Aside from that, on the left of the screen there are two icons linking respectively to my `LinkedIn` and `GitHub` profiles in the middle, and one at the bottom that links to the top of the page.
+Aside from that, on the right of the screen there are two icons linking respectively to my `LinkedIn` and `GitHub` profiles in the middle, and one at the bottom that links to the top of the page.
 
 On the main page, you have my profile picture, along with a short `About me` section as an introduction.
 And under this, there's the `My skills` section, with a tileset of my main skills.
