@@ -249,6 +249,7 @@ nav ul li {
 
 .warning-title {
   color: var(--secondary-color);
+  text-decoration: underline 2px var(--secondary-color);
 }
 
 .project-details {

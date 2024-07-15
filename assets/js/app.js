@@ -83,7 +83,7 @@ const loadTranslations = (lang) => {
         }
       });
 
-      // Update the title of some links
+      // Update the title of links
       const links = document.querySelectorAll("a, i");
       links.forEach((link) => {
         const key = link.dataset.i18n;
