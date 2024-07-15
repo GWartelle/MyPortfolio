@@ -51,7 +51,7 @@ As I needed a mean to showcase my projects, I searched for a portfolio template,
 I liked its style and simplicity, so I dedided to build upon this one.
 
 This portfolio is built simply using HTML, CSS and Javascript.
-The only external tools used are [Ion Icons](https://ionic.io/ionicons) for the hambuger menu bar used for responsivity, [Formspree](https://formspree.io/) for handling the contact form submisions, and [SVGRepo](https://www.svgrepo.com/) for the various svg icons used throughout this portfolio.
+The only external tools used are [Ion Icons](https://ionic.io/ionicons) for the hambuger menu bar used on smaller screens, [Formspree](https://formspree.io/) for handling the contact form submisions, and [SVGRepo](https://www.svgrepo.com/) for the various svg icons used throughout this portfolio.
 
 My portfolio is hosted on [GitHub Pages](https://pages.github.com/).
 
