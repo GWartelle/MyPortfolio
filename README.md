@@ -60,7 +60,7 @@ My portfolio is hosted on [GitHub Pages](https://pages.github.com/).
 <h3 id="built-with">Built With</h3>
 
 [![HTML](https://img.shields.io/badge/HTML-black?style=for-the-badge&logo=html5)](https://developer.mozilla.org/docs/Web/HTML)
-[![CSS](https://img.shields.io/badge/CSS-black?style=for-the-badge&logo=css3)](https://developer.mozilla.org/docs/Web/CSS)
+[![CSS](https://img.shields.io/badge/CSS-black?style=for-the-badge&logo=css3&logoColor=2965F1)](https://developer.mozilla.org/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/Javasript-black?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/docs/Web/JavaScript)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
