@@ -10,7 +10,7 @@
 <!-- PROJECT TITLE -->
 
 <div align="center">
-  <a href="https://gwartelle.github.io/MyPortfolio/">
+  <a href="https://gwartelle.github.io/MyPortfolio/" target="_blank" rel="noopener noreferrer">
     <img src="./assets/icons/apple-touch-icon.png" alt="ChatApp Logo"  height="70">
   </a>
 </div>
